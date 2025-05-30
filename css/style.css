@@ -3,6 +3,10 @@ html, body{
     font-family: "Pretendard", sans-serif;
 }
 
+html{
+    font-size: 1.756vh;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -21,6 +25,7 @@ body{
 #scroll_box{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #content_box{
@@ -42,11 +47,199 @@ section{
     position: fixed;
     left: 0;
     top: 0;
-    width: 110px;
+    width: 6.875rem;
     height: 100%;
     background: #fff;
     z-index: 2;
+    transform-origin: left;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 6.875rem;
+    height: 100%;
+    box-sizing: border-box;
     border-right: 1px solid #ebebeb;
+    background: #fff;
+}
+
+.logo{
+    padding-top: 1.25rem;
+    height: max-content;
+}
+
+.logo a{
+    display: inline-block;
+}
+
+.logo a img{
+    width: 4.375rem;
+}
+
+/* nav */
+
+#nav{
+    width: 100%;
+    padding-top: 0.75rem;
+}
+
+.nav_floor1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.75rem 0;
+}
+
+.nav_floor1 > li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_floor1 > li > a{
+    position: relative;
+    display: block;
+    width: 4.375rem;
+    height: 4.375rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background: #f9fafb;
+}
+
+.nav_floor1 > li:first-child:hover > a,
+.nav_floor1 > li:first-child.active > a,
+.nav_floor1 > li:nth-child(2):hover > a,
+.nav_floor1 > li:nth-child(2).active > a{
+    background-color: var(--color1-);
+}
+
+.nav_floor1 > li:nth-child(3):hover > a,
+.nav_floor1 > li:nth-child(3).active > a{
+    background-color: var(--color2-);
+}
+
+.nav_floor1 > li:nth-child(4):hover > a,
+.nav_floor1 > li:nth-child(4).active > a{
+    background-color: var(--color3-);
+}
+
+.nav_floor1 > li:nth-child(5):hover > a,
+.nav_floor1 > li:nth-child(5).active > a{
+    background-color: var(--color4-);
+}
+
+.nav_floor1 > li:nth-child(6):hover > a,
+.nav_floor1 > li:nth-child(6).active > a{
+    background-color: var(--color5-);
+}
+
+.nav_floor1 > li:nth-child(7):hover > a,
+.nav_floor1 > li:nth-child(7).active > a{
+    background-color: var(--color6-);
+}
+
+.nav_floor1 > li:nth-child(8):hover > a,
+.nav_floor1 > li:nth-child(8).active > a{
+    background-color: var(--color7-);
+}
+
+.nav_floor1 > li > a::after{
+    display: none;
+    content: "";
+    position: absolute;
+    right: 1.438rem;
+    top: 0;
+    width: 3px;
+    height: 100%;
+}
+
+.nav_floor1 > li:hover > a::after{
+    display: block;
+}
+
+.nav_floor1 > li:first-child > a::after,
+.nav_floor1 > li:nth-child(2) > a::after{
+    background: var(--color1-);
+}
+
+.nav_floor1 > li:nth-child(3) > a::after{
+    background: var(--color2-);
+}
+
+.nav_floor1 > li:nth-child(4) > a::after{
+    background: var(--color3-);
+}
+
+.nav_floor1 > li:nth-child(5) > a::after{
+    background: var(--color4-);
+}
+
+.nav_floor1 > li:nth-child(6) > a::after{
+    background: var(--color5-);
+}
+
+.nav_floor1 > li:nth-child(7) > a::after{
+    background: var(--color6-);
+}
+
+.nav_floor1 > li:nth-child(8) > a::after{
+    background: var(--color7-);
+}
+
+.nav_floor2{
+    position: absolute;
+    width: calc(44.375rem);
+    height: 100%;
+    left: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 1.875rem;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.nav_floor2 > li{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_floor2 > li > a{
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 700;
+    width: max-content;
+    letter-spacing: -0.6px;
+}
+
+.nav_floor3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0 0.75rem;
+}
+
+.nav_floor3 > li > a{
+    display: inline-block;
+    padding: 0.625rem 0.813rem;
+    font-size: 1rem;
+    font-weight: 800;
+    background: #BDBDBD;
+    letter-spacing: -0.5px;
+    color: #fff;
+    border-radius: 999px;
+}
+
+.nav_floor3 > li > a:hover{
+    background: #000;
 }
 
 /* main */
@@ -57,10 +250,10 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 110px;
-    width: 1750px;
+    margin-left: 6.875rem;
+    width: 107rem;
     box-sizing: border-box;
-    padding: 0 300px 0 80px;
+    padding: 0 18.75rem 0 5rem;
 }
 
 .main_video{
@@ -99,16 +292,16 @@ section{
 }
 
 .main_tit h2{
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: 700;
     letter-spacing: -1px;
     line-height: 1.35;
     color: #fff;
-    padding: 30px 0 18px 0;
+    padding: 1.875rem 0 1.125rem 0;
 }
 
 .main_tit span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     letter-spacing: -1px;
     color: rgba(255, 255, 255, 0.8);
@@ -130,7 +323,7 @@ section{
 }
 
 .mt_right strong{
-    font-size: 310px;
+    font-size: 19.375rem;
     font-weight: 700;
     color: #fff;
     letter-spacing: -6px;
@@ -150,6 +343,7 @@ section{
 }
 
 .section_tit_area{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -159,11 +353,22 @@ section{
 .section_tit_area.type1{
 }
 
-#section1 .section_tit_area{
+.section_tit_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 18.75rem);
+    height: 100%;
+    transform-origin: left;
+}
+
+#section1 .section_tit_bg{
     background: var(--color1-);
 }
 
 .section_tit{
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -171,13 +376,13 @@ section{
 
 .section_tit h2{
     color: #fff;
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 700;
     line-height: 1.4;
 }
 
 .section_tit p{
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
     letter-spacing: -1px;
@@ -185,7 +390,33 @@ section{
 }
 
 .section_tit_area.type1 .section_tit{
-    width: 500px;
-    padding: 0 120px;
-    gap: 50px 0;
+    width: 31.25rem;
+    padding: 0 7.5rem;
+    gap: 3.125rem 0;
+}
+
+.section_pic{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 17rem;
+}
+
+.section_pic_area{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.sp_box{
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.sp_box.type1{
+    position: absolute;
+    right: -6.25rem;
+    bottom: 2.5rem;
 }
