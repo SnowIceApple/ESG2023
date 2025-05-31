@@ -15,6 +15,13 @@ $(document).ready(function(){
             // markers: true,
             invalidateOnRefresh: true,
         }
-        });
+    });
+
+    $('.header').on('mouseenter focus', function(){
+        $('#header').addClass('active');
+    });
+    $('.header').on('mouseleave blur', function(){
+        $('#header').removeClass('active');
+    });
 
 });
