@@ -17,11 +17,13 @@ $(document).ready(function(){
         }
     });
 
-    $('.header').on('mouseenter focus', function(){
+    $('.header, #nav ul li').on('mouseenter focusin', function(){
         $('#header').addClass('active');
     });
-    $('.header').on('mouseleave blur', function(){
+
+    $('.header').on('mouseleave focusout', function(){
         $('#header').removeClass('active');
     });
+
 
 });

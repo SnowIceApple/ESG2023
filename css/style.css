@@ -53,15 +53,17 @@ section{
     z-index: 2;
     transform-origin: left;
     overflow: hidden;
-    transition: width 0.4s cubic-bezier(0, 0.55, 0.45, 1);
+    transition: width 0.4s cubic-bezier(0, 0.55, 0.45, 1), border-width 0.001s 0.4s;
     will-change: width;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    border-right: 0px solid #ebebeb;
 }
 
 #header.active{
     width: 51.25rem;
-    border-right: 1px solid #ebebeb;
+    border-width: 1px;
+    transition: width 0.4s cubic-bezier(0, 0.55, 0.45, 1), border-width 0.001s 0s;
 }
 
 .header{
