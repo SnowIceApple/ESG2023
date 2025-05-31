@@ -54,6 +54,9 @@ section{
     transform-origin: left;
     overflow: hidden;
     transition: width 0.4s cubic-bezier(0, 0.55, 0.45, 1);
+    will-change: width;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 #header.active{
