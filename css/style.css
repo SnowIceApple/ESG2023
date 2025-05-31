@@ -61,6 +61,7 @@ section{
 
 #header.active{
     width: 51.25rem;
+    border-right: 1px solid #ebebeb;
 }
 
 .header{
