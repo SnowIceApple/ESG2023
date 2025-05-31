@@ -66,15 +66,42 @@ section{
     transition: width 0.4s cubic-bezier(0, 0.55, 0.45, 1), border-width 0.001s 0s;
 }
 
+#header::after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 6.825rem;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #ebebeb;
+    pointer-events: none;
+}
+
+.backtoTop{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.backtoTop a{
+    display: flex;
+    justify-content: center;
+    width: 6.825rem;
+    padding: 1.563rem 0;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 .header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     width: 6.875rem;
-    height: 100%;
     box-sizing: border-box;
-    border-right: 1px solid #ebebeb;
     background: #fff;
 }
 
@@ -456,11 +483,37 @@ section{
     line-height: 1.35;
 }
 
+.section_tit_numInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem 0;
+}
+
 .section_tit_numInfo em{
     font-size: 1.5rem;
     color: #fff;
     font-weight: 600;
     letter-spacing: -0.03rem;
+}
+
+.section_tit_num{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0 0.625rem;
+    color: #fff;
+}
+
+.section_tit_num strong{
+    font-size: 4.325rem;
+    font-weight: 700;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.section_tit_num span{
+    font-size: 1.125rem;
+    font-weight: 600;
 }
 
 .section_tit_area.type1 .section_tit{
@@ -500,6 +553,8 @@ section{
     top: -1.5rem;
     left: -2.75rem;
 }
+
+/* graph */
 
 .graph_area{
     display: flex;
