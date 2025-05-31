@@ -120,6 +120,50 @@ section{
     border-radius: 3px;
     border: 1px solid #ebebeb;
     background: #f9fafb;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav_floor1 > li:nth-child(1) > a{
+    background-image: url('../img/01.svg');
+}
+
+.nav_floor1 > li:nth-child(2) > a{
+    background-image: url('../img/02.svg');
+}
+
+.nav_floor1 > li:nth-child(3) > a{
+    background-image: url('../img/03.svg');
+}
+
+.nav_floor1 > li:nth-child(4) > a{
+    background-image: url('../img/04.svg');
+}
+
+.nav_floor1 > li:nth-child(5) > a{
+    background-image: url('../img/05.svg');
+}
+
+.nav_floor1 > li:nth-child(6) > a{
+    background-image: url('../img/06.svg');
+}
+
+.nav_floor1 > li:nth-child(7) > a{
+    background-image: url('../img/07.svg');
+}
+
+.nav_floor1 > li:nth-child(8) > a{
+    background-image: url('../img/08.svg');
+}
+
+.nav_floor1 > li:first-child:hover > a,
+.nav_floor1 > li:first-child.active > a{
+    background-image: url('../img/01_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(2):hover > a,
+.nav_floor1 > li:nth-child(2).active > a{
+    background-image: url('../img/02_wh.svg');
 }
 
 .nav_floor1 > li:first-child:hover > a,
@@ -132,31 +176,37 @@ section{
 .nav_floor1 > li:nth-child(3):hover > a,
 .nav_floor1 > li:nth-child(3).active > a{
     background-color: var(--color2-);
+    background-image: url('../img/03_wh.svg');
 }
 
 .nav_floor1 > li:nth-child(4):hover > a,
 .nav_floor1 > li:nth-child(4).active > a{
     background-color: var(--color3-);
+    background-image: url('../img/04_wh.svg');
 }
 
 .nav_floor1 > li:nth-child(5):hover > a,
 .nav_floor1 > li:nth-child(5).active > a{
     background-color: var(--color4-);
+    background-image: url('../img/05_wh.svg');
 }
 
 .nav_floor1 > li:nth-child(6):hover > a,
 .nav_floor1 > li:nth-child(6).active > a{
     background-color: var(--color5-);
+    background-image: url('../img/06_wh.svg');
 }
 
 .nav_floor1 > li:nth-child(7):hover > a,
 .nav_floor1 > li:nth-child(7).active > a{
     background-color: var(--color6-);
+    background-image: url('../img/07_wh.svg');
 }
 
 .nav_floor1 > li:nth-child(8):hover > a,
 .nav_floor1 > li:nth-child(8).active > a{
     background-color: var(--color7-);
+    background-image: url('../img/08_wh.svg');
 }
 
 .nav_floor1 > li > a::after{
