@@ -2,7 +2,7 @@ $(document).ready(function(){
     gsap.registerPlugin(ScrollTrigger);
 
 
-    const horizontalScroll = gsap.to("#content_box", {
+    var horizontalScroll = gsap.to("#content_box", {
         x: () => -(document.querySelector('#content_box').scrollWidth - window.innerWidth),
         ease: "none",
         scrollTrigger: {
