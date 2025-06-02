@@ -453,6 +453,7 @@ section{
     top: 0;
     width: calc(100% + 18.75rem);
     height: 100%;
+    transform: scaleX(0);
     transform-origin: left;
 }
 

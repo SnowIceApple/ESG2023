@@ -2,7 +2,7 @@ $(document).ready(function(){
     gsap.registerPlugin(ScrollTrigger);
 
 
-    gsap.to("#content_box", {
+    const horizontalScroll = gsap.to("#content_box", {
         x: () => -(document.querySelector('#content_box').scrollWidth - window.innerWidth),
         ease: "none",
         scrollTrigger: {
@@ -23,6 +23,26 @@ $(document).ready(function(){
 
     $('.header').on('mouseleave focusout', function(){
         $('#header').removeClass('active');
+    });
+    
+    var sectionTitArea = document.querySelectorAll('.section_tit_area');
+
+    sectionTitArea.forEach((sta, i) => {
+
+        var sectionTitBg = sta.querySelector('.section_tit_bg');
+
+        gsap.to(sectionTitBg,{
+            scaleX: 1,
+            duration: 0.6,
+            ease: "power1.inOut",
+            scrollTrigger: {
+                trigger: sta.querySelector('.section_tit_bg'),
+                start: 'left 65%',
+                markers: true,
+                invalidateOnRefresh: true,
+                containerAnimation: horizontalScroll,
+            }
+        });
     });
 
 
