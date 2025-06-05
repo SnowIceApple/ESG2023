@@ -34,7 +34,7 @@ $(document).ready(function(){
         let tl1 = gsap.timeline({
             scrollTrigger: {
                 trigger: sta.querySelector('.section_tit_bg'),
-                start: 'left 65%',
+                start: 'left 70%',
                 invalidateOnRefresh: true,
                 containerAnimation: horizontalScroll,
                 onEnter: () => sta.classList.add('active'),
@@ -82,5 +82,20 @@ $(document).ready(function(){
     //     }
     //     );
     // });
+
+    var infoBox = document.querySelectorAll('.infoBox');
+
+    infoBox.forEach((ifB, i) => {
+        gsap.to(ifB, {
+            scrollTrigger: {
+                trigger: ifB,
+                start: '100% right',
+                invalidateOnRefresh: true,
+                containerAnimation: horizontalScroll,
+                onEnter: () => ifB.classList.add('active'),
+            }
+        });
+
+    });
 
 });
