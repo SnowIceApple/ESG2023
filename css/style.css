@@ -454,7 +454,14 @@ section{
     width: calc(100% + 18.75rem);
     height: 100%;
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
     transform-origin: left;
+    transition: all .6s ease;
+}
+
+.section_tit_area.active .section_tit_bg{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
 }
 
 #section1 .section_tit_bg,
@@ -471,6 +478,7 @@ section{
 }
 
 .section_tit h2{
+    display: inline-block;
     color: #fff;
     font-size: 3.438rem;
     font-weight: 700;
@@ -518,7 +526,7 @@ section{
     font-weight: 600;
 }
 
-.section_tit_area.type1 .section_tit{
+.section_tit_area .section_tit{
     width: 31.5rem;
     padding: 0 7.5rem;
     gap: 3.125rem 0;
@@ -546,6 +554,9 @@ section{
     position: relative;
     width: max-content;
     height: max-content;
+    opacity: 0;
+    transform: translateY(1.5rem);
+    -webkit-transform: translateY(1.5rem);
 }
 
 .sp_box.type1{
@@ -558,6 +569,64 @@ section{
     position: absolute;
     top: -1.5rem;
     left: -2.75rem;
+}
+
+/* section_tit animation */
+
+.section_tit_area.active .section_tit h2,
+.section_tit_area.active .section_tit p,
+.section_tit_area.active .section_tit .section_tit_numInfo{
+    opacity: 0;
+    transform: translateY(1.5rem);
+    -webkit-transform: translateY(1.5rem);
+    animation: secTitAni 0.4s ease forwards;
+}
+
+.section_tit_area .section_tit.type1 h2{
+    animation-delay: 0.8s;
+}
+
+.section_tit_area .section_tit.type1 p{
+    animation-delay: 0.6s;
+}
+
+.section_tit_area .section_tit.type2 h2{
+    animation-delay: 1s;
+}
+
+.section_tit_area .section_tit.type2 .section_tit_numInfo{
+    animation-delay: 0.8s;
+}
+
+.section_tit_area .section_tit.type2 p{
+    animation-delay: 0.6s;
+}
+
+
+@keyframes secTitAni{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+
+/* section_pic animation */
+
+.section_pic.active .sp_box{
+    animation: spBoxAni 0.4s ease forwards;
+}
+
+@keyframes spBoxAni{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+}
+
+.section_pic .sp_box:nth-child(2){
+    animation-delay: 0.2s;
 }
 
 /* graph */
@@ -618,7 +687,14 @@ section{
     top: 0;
     height: 100%;
     transform-origin: left;
-    transition: width 0.3s;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transition: all .5s ease;
+}
+
+.graph_box.active .graph_line{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
 }
 
 #section1 .graph_line{
