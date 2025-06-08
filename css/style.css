@@ -1279,6 +1279,7 @@ section{
     height: 100%;
     box-sizing: border-box;
     padding: 14.75rem 12.5rem 0 12.5rem;
+    border-right: 1px solid #ebebeb;
 }
 
 .topic_main_tit{
@@ -1287,6 +1288,7 @@ section{
     top: 0;
     width: calc(100% - 25rem);
     height: 14.75rem;
+    box-sizing: border-box;
 }
 
 .topic_main_tit_track{
@@ -1342,7 +1344,7 @@ section{
     font-size: 1.3rem;
     line-height: 1.4;
     font-weight: 400;
-    letter-spacing: -0.02rem;
+    letter-spacing: -0.04rem;
     word-break: keep-all;
 }
 
@@ -1404,15 +1406,15 @@ section{
     margin-bottom: 8.5rem;
 }
 
-#section4 .topic .infoBox_area ul li:nth-child(1) .infoBox_icon{
+#section4 .topic:first-child .infoBox_area ul li:nth-child(1) .infoBox_icon{
     background-image: url('../img/s4_ico1.svg');
 }
 
-#section4 .topic .infoBox_area ul li:nth-child(2) .infoBox_icon{
+#section4 .topic:first-child .infoBox_area ul li:nth-child(2) .infoBox_icon{
     background-image: url('../img/s4_ico2.svg');
 }
 
-#section4 .topic .infoBox_area ul li:nth-child(3) .infoBox_icon{
+#section4 .topic:first-child .infoBox_area ul li:nth-child(3) .infoBox_icon{
     background-image: url('../img/s4_ico3.svg');
 }
 

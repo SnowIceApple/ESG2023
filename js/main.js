@@ -97,4 +97,27 @@ $(document).ready(function(){
 
     });
 
+    var topicMainTit = document.querySelectorAll('.topic_main_tit');
+
+    topicMainTit.forEach((tMT, i) => {
+        var topicMainTrack = tMT.querySelector('.topic_main_tit_track');
+        var topicMainMovTxt = topicMainTrack.querySelector('h3');
+        const vh = (coef) => window.innerHeight * (coef/100);
+        const vw = (coef) => window.innerWidth * (coef/100);
+
+        gsap.to((topicMainMovTxt), {
+            x: () => (tMT.scrollWidth - topicMainMovTxt.scrollWidth),
+            ease: 'none',
+            scrollTrigger: {
+                trigger: topicMainTrack,
+                start: - vh(20) + 'left',
+                end: () => "+=" + (topicMainTrack.offsetWidth - topicMainMovTxt.scrollWidth),
+                invalidateOnRefresh: true,
+                containerAnimation: horizontalScroll,
+                markers: true,
+                scrub: 1,
+            }
+        }); 
+    });
+
 });
