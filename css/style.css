@@ -146,7 +146,7 @@ section{
     box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid #ebebeb;
-    background: #f9fafb;
+    background-color: #f9fafb;
     background-position: center;
     background-repeat: no-repeat;
 }
