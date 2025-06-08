@@ -622,7 +622,7 @@ section{
     -webkit-transform: translateY(1.5rem);
 }
 
-.vsp_box.type1{
+.sp_box.type1{
     position: absolute;
     right: -6.25rem;
     bottom: 2.5rem;
