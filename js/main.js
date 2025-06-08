@@ -68,7 +68,6 @@ $(document).ready(function(){
                 trigger: gpB,
                 start: '80% right',
                 invalidateOnRefresh: true,
-                markers: true,
                 containerAnimation: horizontalScroll,
                 onEnter: () => gpB.classList.add('active'),
             }
