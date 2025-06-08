@@ -1418,6 +1418,30 @@ section{
     background-image: url('../img/s4_ico3.svg');
 }
 
+#section4 .topic:nth-child(2) .infoBox_area ul li:nth-child(1) .infoBox_icon{
+    background-image: url('../img/s4_ico1.svg');
+}
+
+#section4 .topic:nth-child(2) .infoBox_area ul li:nth-child(2) .infoBox_icon{
+    background-image: url('../img/s4_ico2.svg');
+}
+
+#section4 .topic:nth-child(2) .infoBox_area ul li:nth-child(3) .infoBox_icon{
+    background-image: url('../img/s4_ico4.svg');
+}
+
+#section4 .topic:nth-child(3) .infoBox_area ul li:nth-child(1) .infoBox_icon{
+    background-image: url('../img/s4_ico1.svg');
+}
+
+#section4 .topic:nth-child(3) .infoBox_area ul li:nth-child(2) .infoBox_icon{
+    background-image: url('../img/s4_ico5.svg');
+}
+
+#section4 .topic:nth-child(3) .infoBox_area ul li:nth-child(3) .infoBox_icon{
+    background-image: url('../img/s4_ico6.svg');
+}
+
 .topic .infoBox.type2 .infoBox_bot{
     transition-delay: 0.61s;
 }

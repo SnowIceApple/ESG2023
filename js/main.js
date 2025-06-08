@@ -114,7 +114,6 @@ $(document).ready(function(){
                 end: () => "+=" + (topicMainTrack.offsetWidth - topicMainMovTxt.scrollWidth),
                 invalidateOnRefresh: true,
                 containerAnimation: horizontalScroll,
-                markers: true,
                 scrub: 1,
             }
         }); 
