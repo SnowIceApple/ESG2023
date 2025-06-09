@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
     var horizontalScroll = gsap.to("#content_box", {
@@ -118,5 +118,44 @@ $(document).ready(function(){
             }
         }); 
     });
+    
+
+document.querySelectorAll('#nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        const targetHref = this.getAttribute('href').split('#')[1];
+        const targetId = document.getElementById(targetHref);
+        console.log(targetId);
+        const navBar = document.querySelector('.header');
+        const scrollToHere = (targetId.offsetLeft - navBar.offsetWidth);
+        gsap.to(window, {
+            scrollTo: scrollToHere,
+            duration: 1,
+        });
+    });
+});
+
+var sections = gsap.utils.toArray('section');
+
+sections.forEach((section, i) => {
+    const vh = (coef) => window.innerHeight * (coef/100);
+    let relatedLink = document.querySelector(`[data-section="${section.id}"]`)
+    
+    ScrollTrigger.create({
+    trigger: section,
+    start: - vh(20) + 'left',
+    end: () => "+=" + (section.offsetWidth - vh(20)),
+    containerAnimation: horizontalScroll,
+    id: `section-${i+1}`,
+    onToggle: () => {
+        relatedLink.classList.toggle('active')
+    },
+  });
+    
+  });
+
+
+
+
 
 });
