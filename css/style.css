@@ -1189,7 +1189,7 @@ section{
     position: relative;
     display: inline-block;
     font-size: 1.125rem;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     letter-spacing: -0.03rem;
 }
@@ -1303,6 +1303,11 @@ section{
     box-sizing: border-box;
     padding: 14.75rem 12.5rem 0 12.5rem;
     border-right: 1px solid #ebebeb;
+}
+
+.topic:last-child{
+    padding-right: 0;
+    border-right: none;
 }
 
 .topic_main_tit{
@@ -1465,6 +1470,18 @@ section{
     background-image: url('../img/s4_ico6.svg');
 }
 
+#section4 .topic:nth-child(4) .infoBox_area ul li:nth-child(1) .infoBox_icon{
+    background-image: url('../img/s4_ico1.svg');
+}
+
+#section4 .topic:nth-child(4) .infoBox_area ul li:nth-child(2) .infoBox_icon{
+    background-image: url('../img/s4_ico4.svg');
+}
+
+#section4 .topic:nth-child(4) .infoBox_area ul li:nth-child(3) .infoBox_icon{
+    background-image: url('../img/s4_ico7.svg');
+}
+
 .topic .infoBox.type2 .infoBox_bot{
     transition-delay: 0.61s;
 }
@@ -1489,4 +1506,11 @@ section{
     font-weight: 700;
     letter-spacing: -0.03rem;
     color: #999;
+}
+
+/* section5 */
+
+#section5 .section_tit_bg{
+    background: var(--color4-);
+    width: 100%;
 }
