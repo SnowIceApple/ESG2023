@@ -142,15 +142,16 @@ sections.forEach((section, i) => {
     let relatedLink = document.querySelector(`[data-section="${section.id}"]`)
     
     ScrollTrigger.create({
-    trigger: section,
-    start: - vh(20) + 'left',
-    end: () => "+=" + (section.offsetWidth - vh(20)),
-    containerAnimation: horizontalScroll,
-    id: `section-${i+1}`,
-    onToggle: () => {
-        relatedLink.classList.toggle('active')
-    },
-  });
+        trigger: section,
+        start: - vh(20) + 'left',
+        end: () => "+=" + (section.offsetWidth - vh(20)),
+        containerAnimation: horizontalScroll,
+        invalidateOnRefresh: true,
+        id: `section-${i+1}`,
+        onToggle: () => {
+            relatedLink.classList.toggle('active')
+        },
+    });
     
   });
 
