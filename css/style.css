@@ -676,7 +676,7 @@ section{
     animation-delay: 0.8s;
 }
 
-.section_tit_area .section_tit.type3 p{
+.section_tit_area .section_tit.type3 > p{
     animation-delay: 0.9s;
 }
 
