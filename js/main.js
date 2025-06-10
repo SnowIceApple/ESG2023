@@ -147,7 +147,6 @@ sections.forEach((section, i) => {
         end: () => "+=" + (section.offsetWidth),
         containerAnimation: horizontalScroll,
         invalidateOnRefresh: true,
-        markers: true,
         id: `section-${i+1}`,
         onToggle: () => {
             relatedLink.classList.toggle('active')
