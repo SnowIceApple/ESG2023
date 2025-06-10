@@ -144,7 +144,7 @@ sections.forEach((section, i) => {
     ScrollTrigger.create({
         trigger: section,
         start: - vh(20) + 'left',
-        end: () => "+=" + (section.offsetWidth - vh(0.9999)),
+        end: () => "+=" + (section.offsetWidth - vh(0.001)),
         containerAnimation: horizontalScroll,
         invalidateOnRefresh: true,
         id: `section-${i+1}`,
