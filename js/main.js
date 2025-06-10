@@ -144,9 +144,10 @@ sections.forEach((section, i) => {
     ScrollTrigger.create({
         trigger: section,
         start: - vh(20) + 'left',
-        end: () => "+=" + (section.offsetWidth - vh(20)),
+        end: () => "+=" + (section.offsetWidth),
         containerAnimation: horizontalScroll,
         invalidateOnRefresh: true,
+        markers: true,
         id: `section-${i+1}`,
         onToggle: () => {
             relatedLink.classList.toggle('active')
