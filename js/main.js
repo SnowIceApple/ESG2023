@@ -120,7 +120,7 @@ $(document).ready(function(){
     });
     
 
-document.querySelectorAll('#nav a').forEach(anchor => {
+document.querySelectorAll('#header a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
         e.preventDefault();
         const targetHref = this.getAttribute('href').split('#')[1];
