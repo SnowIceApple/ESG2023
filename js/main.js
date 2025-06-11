@@ -97,8 +97,8 @@ $(document).ready(function(){
 
     });
 
-            const vh = (coef) => window.innerHeight * (coef/100);
-        const vw = (coef) => window.innerWidth * (coef/100);
+    const vh = (coef) => window.innerHeight * (coef/100);
+    const vw = (coef) => window.innerWidth * (coef/100);
 
     var topicMainTit = document.querySelectorAll('.topic_main_tit');
 
@@ -122,7 +122,7 @@ $(document).ready(function(){
     });
     
 
-document.querySelectorAll('#header a, .section_topic_nav a').forEach(anchor => {
+document.querySelectorAll('#header a, .section_topic_nav a, .footerNav a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
         e.preventDefault();
         const targetHref = this.getAttribute('href').split('#')[1];
