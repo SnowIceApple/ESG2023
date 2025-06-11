@@ -97,13 +97,15 @@ $(document).ready(function(){
 
     });
 
+            const vh = (coef) => window.innerHeight * (coef/100);
+        const vw = (coef) => window.innerWidth * (coef/100);
+
     var topicMainTit = document.querySelectorAll('.topic_main_tit');
 
     topicMainTit.forEach((tMT, i) => {
         var topicMainTrack = tMT.querySelector('.topic_main_tit_track');
         var topicMainMovTxt = topicMainTrack.querySelector('h3');
-        const vh = (coef) => window.innerHeight * (coef/100);
-        const vw = (coef) => window.innerWidth * (coef/100);
+
 
         gsap.to((topicMainMovTxt), {
             x: () => (tMT.scrollWidth - topicMainMovTxt.scrollWidth),
@@ -120,7 +122,7 @@ $(document).ready(function(){
     });
     
 
-document.querySelectorAll('#header a').forEach(anchor => {
+document.querySelectorAll('#header a, .section_topic_nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
         e.preventDefault();
         const targetHref = this.getAttribute('href').split('#')[1];
@@ -138,7 +140,6 @@ document.querySelectorAll('#header a').forEach(anchor => {
 var sections = gsap.utils.toArray('section');
 
 sections.forEach((section, i) => {
-    const vh = (coef) => window.innerHeight * (coef/100);
     let relatedLink = document.querySelector(`[data-section="${section.id}"]`)
     
     ScrollTrigger.create({
