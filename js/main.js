@@ -27,6 +27,7 @@ $(document).ready(function(){
             pin: true, 
             anticipatePin: 1,
             // markers: true,
+            invalidateOnRefresh: true,
         }
     });
 
