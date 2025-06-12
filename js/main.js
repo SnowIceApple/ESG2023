@@ -256,21 +256,23 @@ sections.forEach((section, i) => {
             $(this).children().find('.hidden_text').text('모바일 메뉴 열기');
         }
     }); 
-    $(window).on('resize', function(){
-        if($(window).innerWidth() <= 911){
+
+    $('.nav_floor2 > li:not(:has(.nav_floor3)) > a, .nav_floor3 li a').on('click', function(){
+        $('#header').removeClass('mobActive');
+        $('body').removeClass('mobNavShow');
+    });
+
+        $(window).on('resize', function(){
+        if($(window).innerWidth() >= 911){
             $('.nav_floor3').hide();
             $('.nav_floor1 > li').removeClass('active');
             $('#header').removeClass('mobActive');
             $('body').removeClass('mobNavShow');
-        }
-        else{
             $('.nav_floor3').show();
         }
-    });
-
-    $('.nav_floor3 li a').on('click', function(){
-        $('#header').removeClass('mobActive');
-        $('body').removeClass('mobNavShow');
+        else{
+            $('.nav_floor3').hide();
+        }
     });
 
 });
