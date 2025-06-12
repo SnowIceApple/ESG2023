@@ -31,13 +31,9 @@
     }
 
     .main_tit{
-        width: max-content;
+        width: 100%;
+        justify-content: center;
         flex-direction: column-reverse;
-        align-content: flex-end;
-    }
-
-    .main_tit .mov_dn{
-        display: none;
     }
 
     .mt_img{
@@ -58,11 +54,8 @@
         align-items: center;
     }
 
-    .main_tit{
-    }
 
     .main_tit h2{
-        width: 60%;
         font-size: 2.5rem;
         text-align: center;
         padding: 1.25rem 0;
@@ -78,6 +71,10 @@
         letter-spacing: -0.005rem;
         line-height: 1.3;
         text-align: center;
+    }
+
+    .mt_left{
+        width: 100%;
     }
     
     .mt_right{
