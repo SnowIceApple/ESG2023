@@ -563,12 +563,17 @@
 
     .topic .infoBox.type2 .infoBox_top{
         margin-bottom: 0;
+        transition-delay: 0.2s;
     }
 
     .infoBox.type2{
         transform: scaleY(1);
         -webkit-transform: scaleY(1);
         padding: 1.5rem;
+    }
+
+    .topic .infoBox.type2 .infoBox_bot{
+        transition-delay: 0s;
     }
 
     #footer{

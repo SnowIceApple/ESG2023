@@ -200,7 +200,7 @@ sections.forEach((section, i) => {
         gsap.to(ifB, {
             scrollTrigger: {
                 trigger: ifB,
-                start: '50% bottom',
+                start: '100% bottom',
                 onEnter: () => ifB.classList.add('active'),
             }
         });
