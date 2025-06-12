@@ -1,5 +1,67 @@
-@media screen and (max-width: 911px){
 
+@media screen and (min-width: 912px){
+    .nav_floor1 > li:first-child:hover > a,
+.nav_floor1 > li:first-child > a.active{
+    background-image: url('../img/01_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(2):hover > a,
+.nav_floor1 > li:nth-child(2) > a.active{
+    background-image: url('../img/02_wh.svg');
+}
+
+.nav_floor1 > li:first-child:hover > a,
+.nav_floor1 > li:first-child > a.active,
+.nav_floor1 > li:nth-child(2):hover > a,
+.nav_floor1 > li:nth-child(2) > a.active{
+    background-color: var(--color1-);
+}
+
+.nav_floor1 > li:nth-child(3):hover > a,
+.nav_floor1 > li:nth-child(3) > a.active{
+    background-color: var(--color2-);
+    background-image: url('../img/03_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(4):hover > a,
+.nav_floor1 > li:nth-child(4) > a.active{
+    background-color: var(--color3-);
+    background-image: url('../img/04_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(5):hover > a,
+.nav_floor1 > li:nth-child(5) > a.active{
+    background-color: var(--color4-);
+    background-image: url('../img/05_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(6):hover > a,
+.nav_floor1 > li:nth-child(6) > a.active{
+    background-color: var(--color5-);
+    background-image: url('../img/06_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(7):hover > a,
+.nav_floor1 > li:nth-child(7) > a.active{
+    background-color: var(--color6-);
+    background-image: url('../img/07_wh.svg');
+}
+
+.nav_floor1 > li:nth-child(8):hover > a,
+.nav_floor1 > li:nth-child(8) > a.active{
+    background-color: var(--color7-);
+    background-image: url('../img/08_wh.svg');
+}
+
+.nav_floor3 li a span{
+    position: absolute;
+    text-indent: -9999px;
+    font-size: 1px;
+}
+
+}
+
+@media screen and (max-width: 911px){
 
     #scroll_box{
         overflow: visible;
@@ -20,9 +82,159 @@
     }
 
     #header{
+        top: 100%;
+        width: 100%;
+        overflow: visible;
+        z-index: 9999;
+    }
+
+    #header.active{
+        width: 100%;
+    }
+
+    #header::after{
         display: none;
     }
 
+    .header{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 6.5rem;
+    }
+
+    .logo{
+        padding-top: 0;
+        position: fixed;
+        left: 0.75rem;
+        bottom: 0.75rem;
+        width: 4.875rem;
+        height: 4.875rem;
+    }
+
+    .logo a{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ebebeb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 50%;
+    }
+
+    .logo a img{
+        width: 3rem;
+    }
+
+    #nav{
+        box-sizing: border-box;
+        padding: 3rem 1.5rem 0 1.5rem;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .nav_logo{
+        display: none;
+    }
+
+    .nav_floor1{
+        gap: 0;
+    }
+
+    .nav_floor1 > li{
+        flex-wrap: wrap;
+        width: 100%;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .nav_floor1 > li:first-child{
+        border-top: 1px solid #ebebeb;
+    }
+
+
+    .nav_floor1 > li > a{
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: none;
+        border-radius: 0;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .nav_floor1 > li:hover > a::after{
+        display: none;
+    }
+
+    .nav_floor1 > li:hover > a{
+        background-color: #fff !important;
+    }
+
+    .nav_floor2{
+        position: static;
+        width: 100%;
+        z-index: 1;
+        flex: 1;
+        padding: 0;
+    }
+
+    .nav_floor2 > li{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav_floor2 > li > a{
+        font-size: 1rem;
+        line-height: 4rem;
+    }
+
+    .nav_floor2 > li:has(.nav_floor3) > a{
+        padding-right: 2.5rem;
+    }
+
+    .nav_floor1 > li > a{
+        width: 3rem;
+        height: 4rem;
+    }
+
+    .nav_floor3{
+        width: 100%;
+        background: #f9fafb;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .nav_floor3 li{
+        width: 100%;
+    }
+
+    .nav_floor3 li a{
+        width: 100%;
+        border-radius: 0;
+        color: #222;
+        box-sizing: border-box;
+        background: transparent;
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .nav_floor3 li:hover a{
+        background: transparent;
+    }
+
+    .nav_floor3 li a span{
+        font-weight: 400;
+    }
+
+    #header.active .nav_floor2{
+        left: 0;
+    }
+
+    .backtoTop{
+        display: none;
+    }
 
     #main{
         width: 100%;
