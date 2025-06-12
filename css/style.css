@@ -1452,7 +1452,7 @@ section{
     margin-bottom: 8.5rem;
 }
 
-#section4 .topic:first-child .infoBox_area ul li:nth-child(1) .infoBox_icon{
+/* #section4 .topic:first-child .infoBox_area ul li:nth-child(1) .infoBox_icon{
     background-image: url('../img/s4_ico1.svg');
 }
 
@@ -1498,6 +1498,22 @@ section{
 
 #section4 .topic:nth-child(4) .infoBox_area ul li:nth-child(3) .infoBox_icon{
     background-image: url('../img/s4_ico7.svg');
+} */
+
+.topic .infoBox_area ul li:nth-child(1) .infoBox_icon{
+    background-image: url('../img/s4_ico1.svg');
+}
+
+.topic .infoBox_area ul li:nth-child(2) .infoBox_icon{
+    background-image: url('../img/s4_ico2.svg');
+}
+
+.topic .infoBox_area ul li:nth-child(3) .infoBox_icon{
+    background-image: url('../img/s4_ico3.svg');
+}
+
+.topic .infoBox_area ul li:nth-child(4) .infoBox_icon{
+    background-image: url('../img/s4_ico4.svg');
 }
 
 .topic .infoBox.type2 .infoBox_bot{
