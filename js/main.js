@@ -40,6 +40,7 @@ $(document).ready(function(){
                 start: 'left 70%',
                 containerAnimation: horizontalScroll,
                 onEnter: () => sta.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         });
 
@@ -54,6 +55,7 @@ $(document).ready(function(){
                 start: '80% right',
                 containerAnimation: horizontalScroll,
                 onEnter: () => sPi.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         });
 
@@ -68,6 +70,7 @@ $(document).ready(function(){
                 start: '80% right',
                 containerAnimation: horizontalScroll,
                 onEnter: () => gpB.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         }); 
     });
@@ -88,6 +91,7 @@ $(document).ready(function(){
                 start: '100% right',
                 containerAnimation: horizontalScroll,
                 onEnter: () => ifB.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         });
 
@@ -154,6 +158,7 @@ sections.forEach((section, i) => {
                 trigger: sta.querySelector('.section_tit_bg'),
                 start: '50% bottom',
                 onEnter: () => sta.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         });
     });
@@ -165,6 +170,7 @@ sections.forEach((section, i) => {
                 trigger: sPi,
                 start: '50% bottom',
                 onEnter: () => sPi.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         });
 
@@ -177,6 +183,7 @@ sections.forEach((section, i) => {
                 trigger: gpB,
                 start: '80% bottom',
                 onEnter: () => gpB.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         }); 
     });
@@ -202,6 +209,7 @@ sections.forEach((section, i) => {
                 trigger: ifB,
                 start: '100% bottom',
                 onEnter: () => ifB.classList.add('active'),
+                invalidateOnRefresh: true,
             }
         });
 

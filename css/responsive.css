@@ -501,7 +501,8 @@
 
     .topic{
         width: 100%;
-        padding: 5rem 1.5rem 0 1.5rem;
+        padding: 5rem 1.5rem 0 1.5rem !important;
+        border: none;
     }
     
     .topic_main_tit{
@@ -574,6 +575,14 @@
 
     .topic .infoBox.type2 .infoBox_bot{
         transition-delay: 0s;
+    }
+
+    .topic .infoBox_area ul{
+        width: 100%;
+    }
+
+    .topic .infoBox_area ul li{
+        width: 100%;
     }
 
     #footer{
