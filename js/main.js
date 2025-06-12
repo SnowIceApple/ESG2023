@@ -227,10 +227,50 @@ sections.forEach((section, i) => {
         $('#header').removeClass('active');
     });
     
-   
+    $('.nav_floor3').each(function(){
+        if($(window).innerWidth() <= 911){
+            $('.nav_floor3').hide();
+        }
+    });
 
+    $('.nav_floor2 > li > a').on('click', function(e){
+        var f2ParentF1 = $(this).closest('.nav_floor1 > li');
+        e.preventDefault();
+        f2ParentF1.toggleClass('active').siblings().removeClass('active');
+        if($(window).innerWidth() <= 911){
+            $(this).siblings('.nav_floor3').stop().slideDown(200);
+            f2ParentF1.siblings().children().find('.nav_floor3').stop().slideUp(200);
+            if(f2ParentF1.hasClass('active') == false){
+                $(this).siblings('.nav_floor3').stop().slideUp(200);
+            }
+        } 
+    });
 
+    $('.mobNavOpen').on('click', function(){
+        $('#header').toggleClass('mobActive');
+        $('body').toggleClass('mobNavShow');
+        if($('#header').hasClass('mobActive')){
+            $(this).children().find('.hidden_text').text('모바일 메뉴 닫기');
+        }
+        else{
+            $(this).children().find('.hidden_text').text('모바일 메뉴 열기');
+        }
+    }); 
+    $(window).on('resize', function(){
+        if($(window).innerWidth() <= 911){
+            $('.nav_floor3').hide();
+            $('.nav_floor1 > li').removeClass('active');
+            $('#header').removeClass('mobActive');
+            $('body').removeClass('mobNavShow');
+        }
+        else{
+            $('.nav_floor3').show();
+        }
+    });
 
-
+    $('.nav_floor3 li a').on('click', function(){
+        $('#header').removeClass('mobActive');
+        $('body').removeClass('mobNavShow');
+    });
 
 });

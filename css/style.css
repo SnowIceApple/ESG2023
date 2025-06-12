@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;
 }
 
+body.mobNavShow{
+    overflow: hidden;
+}
+
 :root{
     --color1-: #46a8ac;
     --color2-: #89C27A;
