@@ -117,7 +117,7 @@ $(document).ready(function(){
     });
     
 
-document.querySelectorAll('#header a, .section_topic_nav a, .footerNav a').forEach(anchor => {
+document.querySelectorAll('#header > div:not(.logo) a, .section_topic_nav a, .footerNav a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
         e.preventDefault();
         const targetHref = this.getAttribute('href').split('#')[1];
