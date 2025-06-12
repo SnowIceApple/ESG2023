@@ -309,7 +309,6 @@
     }
 
     .circleChart ul li:nth-child(n+3) .colorCircle{
-        border: 1vw solid #fff;
     }
 
     .colorCircle span{
