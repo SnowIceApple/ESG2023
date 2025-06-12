@@ -94,7 +94,6 @@ $(document).ready(function(){
     });
 
 
-
     topicMainTit.forEach((tMT, i) => {
         var topicMainTrack = tMT.querySelector('.topic_main_tit_track');
         var topicMainMovTxt = topicMainTrack.querySelector('h3');
@@ -196,6 +195,17 @@ sections.forEach((section, i) => {
         });
     });
 });
+
+    infoBox.forEach((ifB, i) => {
+        gsap.to(ifB, {
+            scrollTrigger: {
+                trigger: ifB,
+                start: '50% bottom',
+                onEnter: () => ifB.classList.add('active'),
+            }
+        });
+
+    });
     }
     });
 
