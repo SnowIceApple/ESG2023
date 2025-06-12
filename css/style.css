@@ -1116,6 +1116,7 @@ section{
 }
 
 .infoBox_icon_area{
+    width: 100%;
     margin-bottom: 3rem;
 }
 

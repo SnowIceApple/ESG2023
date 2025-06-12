@@ -181,6 +181,21 @@ sections.forEach((section, i) => {
             }
         }); 
     });
+
+    document.querySelectorAll('#header a, .section_topic_nav a, .footerNav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        const targetHref = this.getAttribute('href').split('#')[1];
+        const targetId = document.getElementById(targetHref);
+        console.log(targetId);
+        const navBar = document.querySelector('.header');
+        // const scrollToHere = (targetId.offsetLeft - navBar.offsetWidth);
+        gsap.to(window, {
+            scrollTo: targetId,
+            duration: 1,
+        });
+    });
+});
     }
     });
 

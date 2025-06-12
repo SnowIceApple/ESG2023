@@ -126,6 +126,10 @@
         transform-origin: top;
     }
 
+    .topicSectionTit .section_tit_bg{
+        height: 100%;
+    }
+
     .section_tit_area.active .section_tit_bg{
         transform: scale(1, 1);
         -webkit-transform: scale(1, 1);
@@ -135,6 +139,7 @@
         width: 100%;
         gap: 1.25rem;
         align-items: center;
+        padding-bottom: 2.5rem;
     }
 
     .section_tit h2{
@@ -147,15 +152,12 @@
         text-align: center;
     }
 
-    .section_tit_numInfo em{
-        text-align: center;
-    }
 
     .section_pic,
     .section_pic.type2{
         width: 100%;
         box-sizing: border-box;
-        padding: 2.5rem 2.5rem 5rem 2.5rem;
+        padding: 0rem 2.5rem 5rem 2.5rem;
     }
     
     .sp_box{
@@ -298,7 +300,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        width: 35vw;
+        width: 33vw;
         height: 100%;
         background: #fff;
     }
@@ -355,5 +357,180 @@
         width: 15vw;
     }
 
+    .section_tit_num{
+        gap: 0 0.5rem;
+        justify-content: center;
+    }
 
+    .section_tit_num strong{
+        font-size: 2.625rem;
+    }
+
+    .section_tit_numInfo em{
+        text-align: center;
+    }
+
+    .infoBox_area{
+        width: 100%;
+        overflow-x: scroll;
+        box-sizing: border-box;
+        padding-left: 1.5rem;
+    }
+
+    .infoBox_area ul{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 0 0.75rem;
+    }
+
+    .infoBox_area ul li{
+        width: 90vw;
+    }
+    
+    .infoBox{
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    .infoBox_icon_area{
+        width: 100%;
+    }
+
+    .infoBox_icon_area .infoBox_icon{
+        width: 4.5rem;
+        height: 4.5rem;
+        background-size: 60%;
+    }
+
+    .infoBox_top{
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+    }
+
+    .infoBox_top strong{
+        font-size: 1.25rem;
+    }
+
+    .infoBox_top p{
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .basic_numInfo{
+        gap: 0 0.5rem;
+    }
+
+    .basic_numInfo strong{
+        font-size: 2.625rem;
+    }
+
+    .section_tit .st_cate{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .section_tit_top{
+        gap: 0.75rem 0;
+    }
+
+    .section_topic_nav ul{
+        flex-direction: row;
+        justify-content: center;
+        gap: 0 0.8rem;
+    }
+
+    .section_topic_nav ul li{
+        width: auto;
+        padding: 0;
+        border-bottom: none;
+        overflow: visible;
+    }
+
+    .section_topic_nav ul li:not(:last-child)::after{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 50%;
+        top: 50%;
+        right: -0.4rem;
+        background: rgba(255, 255, 255, 0.4);
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .section_topic_nav ul li strong{
+        opacity: 1;
+        font-size: 1rem;
+    }
+
+    .section_topic_nav ul li a{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-indent: -9999px;
+        font-size: 1px;
+        background: none;
+        padding: 0;
+    }
+
+    .goals{
+        flex-direction: column-reverse;
+        gap: 1rem 0;
+    }
+
+    .goals_img{
+        padding: 0;
+    }
+
+    .goals p{
+        font-size: 0.875rem;
+        width: 62%;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
+
+    .topic_area{
+        width: 100%;
+    }
+
+    .topic{
+        width: 100%;
+        padding: 5rem 1.5rem 0 1.5rem;
+    }
+    
+    .topic_main_tit{
+        position: static;
+        width: 100%;
+    }
+
+    .topic_tit{
+        width: 100%;
+    }
+
+    .topic_tit_img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .topic_tit_img img{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .topic .infoBox_area{
+        padding: 0;
+    }
+
+    .infoBox.type2{
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
 }
