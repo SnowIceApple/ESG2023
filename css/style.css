@@ -1029,9 +1029,9 @@ section{
 .chart_desc{
     width: max-content;
     position: absolute;
-    left: 50%;
+    right: 50%;
     bottom: 0;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     padding-top: 0.875rem;
     background: #fff;
     margin-top: 1.3rem;

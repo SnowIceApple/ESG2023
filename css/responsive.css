@@ -180,7 +180,18 @@
     .graph_area{
         width: 100%;
         box-sizing: border-box;
-        padding: 0 2.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .graph_tit{
+        width: 100%;
+        text-align: center;
+        padding: 0 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .graph_tit h3{
+        font-size: 2rem;
     }
 
     .graph_box{
@@ -199,4 +210,151 @@
     .graph_num strong{
         font-size: 2.625rem;    
     }
+
+    .circleChart_area{
+        padding: 0 1.5rem;
+        gap: 3rem 0;
+    }
+
+    .circleChart_tit{
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .circleChart_tit h3{
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    .circleChart{
+        width: 100%;
+    }
+
+    .circleChart ul{
+        flex-direction: column;
+    }
+
+    .circleChart ul li{
+        width: 100% !important;
+        margin: 0;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .circleChart ul li:not(:first-child){
+        margin: 0 0 3rem 0;
+    }
+
+    .circleChart ul li:first-child .colorCircle{
+        width: 65vw;
+        height: 65vw;
+    }
+
+    .circleChart ul li:nth-child(2){
+        margin-top: -17.5vw !important;
+        padding-left: 15vw;
+    }
+
+    .circleChart ul li:nth-child(n+2){
+        padding-left: 15vw;
+    }
+
+    .circleChart ul li:nth-child(n+4){
+        margin: 0 0 4rem 0;
+    }
+
+    .circleChart ul li:nth-child(6){
+        margin: 0;
+    }
+
+    .circleChart ul li:nth-child(2) .colorCircle{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .colorCircle{
+        position: relative;
+        z-index: 2;
+    }
+
+    .circleChart ul li::after{
+        width: 50%;
+        height: 1px;
+        bottom: 50%;
+        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+    }
+
+    .circleChart ul li:nth-child(n+3)::after{
+        width: 100%;
+        left: 0;
+    }
+
+    .circleChart ul li:nth-child(n+3)::before{
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 35vw;
+        height: 100%;
+        background: #fff;
+    }
+
+    .circleChart ul li:nth-child(n+2) .colorCircle_box{
+        width: 35vw;
+        align-items: center;
+    }
+
+    .circleChart ul li:nth-child(n+3) .colorCircle{
+        border: 1vw solid #fff;
+    }
+
+    .colorCircle span{
+        padding: 0;
+        font-size: 7vw;
+        font-weight: 600;
+    }
+
+    .chart_desc{
+        right: 0;
+        bottom: 50%;
+        transform: translate(0, 50%);
+        -webkit-transform: translate(0, 50%);
+        margin: 0;
+        padding-top: 0;
+        padding-left: 1rem;
+        text-align: right;
+    }
+
+    .chart_desc br{
+        display: none;
+    }
+
+    .chart_desc span{
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .circleChart ul li:nth-child(n+3) .colorCircle_box{
+        position: relative;
+    }
+
+    .circleChart ul li:nth-child(n+3) .colorCircle{
+        position: static;
+    }
+
+    .circleChart ul li:nth-child(n+3) .colorCircle span{
+        left: calc(-20%);
+        transform: translate(0, -50%);
+    }
+
+    .circleChart ul li:first-child .chart_desc{
+        width: 15vw;
+    }
+
+
 }
