@@ -188,7 +188,7 @@ sections.forEach((section, i) => {
         }); 
     });
 
-    document.querySelectorAll('.nav_floor2 > li:not(:has(.nav_floor3)) > a, .nav_floor3 > li > a, .section_topic_nav a, .footerNav a').forEach(anchor => {
+    document.querySelectorAll('.nav_floor2 > li:not(:has(.nav_floor3)) > a, .nav_floor3 > li > a, .logo a, .section_topic_nav a, .footerNav a').forEach(anchor => {
     anchor.addEventListener('click', function(e){
         e.preventDefault();
         const targetHref = this.getAttribute('href').split('#')[1];
