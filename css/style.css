@@ -111,7 +111,9 @@ section{
 
 .logo{
     padding-top: 1.25rem;
-    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo a{
