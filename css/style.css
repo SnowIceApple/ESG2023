@@ -111,6 +111,7 @@ section{
 
 .logo{
     padding-top: 1.25rem;
+    width: 6.875rem;
     display: flex;
     align-items: center;
     justify-content: center;
