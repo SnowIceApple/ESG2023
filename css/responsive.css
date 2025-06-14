@@ -69,6 +69,7 @@
 
     #scroll_box{
         overflow: visible;
+        height: auto;
     }
 
     #content_box{
